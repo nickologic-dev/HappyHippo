@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Happy_Hippo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hippo1" translatesAutoresizingMaskIntoConstraints="NO" id="chS-JR-82x">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy Hippo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Pj-CI-OvM">
+                                <rect key="frame" x="42.666666666666657" y="40" width="329" height="136"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1O-aA-H80">
+                                <rect key="frame" x="20" y="206" width="374" height="500"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <action selector="hippoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dpe-FV-YdX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.55294117647058827" green="0.76862745098039209" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="I1O-aA-H80" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="05k-ZA-MvF"/>
+                            <constraint firstItem="chS-JR-82x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8Np-YD-p9f"/>
+                            <constraint firstItem="chS-JR-82x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ALC-7G-kd3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="chS-JR-82x" secondAttribute="bottom" id="D0I-1h-S44"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I1O-aA-H80" secondAttribute="trailing" constant="20" id="Dr7-Mo-IFm"/>
+                            <constraint firstItem="chS-JR-82x" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JRM-OH-DPq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="I1O-aA-H80" secondAttribute="bottom" constant="30" id="Qza-xf-xhy"/>
+                            <constraint firstItem="I1O-aA-H80" firstAttribute="top" secondItem="6Pj-CI-OvM" secondAttribute="bottom" constant="30" id="VMq-fP-UmM"/>
+                            <constraint firstItem="chS-JR-82x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YIh-MF-8aY"/>
+                            <constraint firstItem="chS-JR-82x" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ae8-Ze-h75"/>
+                            <constraint firstItem="chS-JR-82x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="agz-3g-hDF"/>
+                            <constraint firstItem="6Pj-CI-OvM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fQL-eF-F1v"/>
+                            <constraint firstItem="6Pj-CI-OvM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="lgj-hS-de9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="chS-JR-82x" secondAttribute="trailing" id="xw8-RR-t5I"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="hippoIImage" destination="chS-JR-82x" id="7Ly-xN-cNm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="126.38680659670166"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Hippo1" width="97" height="209.33332824707031"/>
+    </resources>
+</document>
